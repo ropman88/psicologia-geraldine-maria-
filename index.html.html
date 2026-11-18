@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#211632">
+  <meta name="description" content="Colección de proyectos, recursos y enlaces destacados.">
+  <title>Referencias: Relación entre el estrés laboral y el bienestar psicológico de miembros de la fuerza aeroespacial Colombiana.</title>
+
+  <style>
+    :root {
+      color-scheme: dark;
+      --background: #17121e;
+      --surface: #211a2b;
+      --surface-raised: #2b2138;
+      --text: #f7f3fb;
+      --muted: #b7a9c7;
+      --accent: #bd91f4;
+      --accent-strong: #a879e8;
+      --border: #49365d;
+      --content-width: 1180px;
+      --radius: 18px;
+      --shadow: 0 16px 40px rgb(0 0 0 / 22%);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 90px;
+    }
+
+    body {
+      min-height: 100vh;
+      margin: 0;
+      color: var(--text);
+      background:
+        radial-gradient(ellipse at 12% 0%, rgb(135 83 186 / 17%), transparent 38%),
+        radial-gradient(ellipse at 100% 20%, rgb(87 57 128 / 13%), transparent 34%),
+        var(--background);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+        "Segoe UI", sans-serif;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    a:focus-visible {
+      outline: 3px solid var(--accent);
+      outline-offset: 4px;
+    }
+
+    .container {
+      width: min(var(--content-width), calc(100% - 48px));
+      margin-inline: auto;
+    }
+
+    .site-header {
+      position: sticky;
+      z-index: 10;
+      top: 0;
+      border-bottom: 1px solid rgb(73 54 93 / 65%);
+      background: rgb(23 18 30 / 88%);
+      backdrop-filter: blur(16px);
+    }
+
+    .nav {
+      display: flex;
+      min-height: 74px;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .brand {
+      font-size: 1.05rem;
+      font-weight: 800;
+      letter-spacing: -0.045em;
+    }
+
+    .brand span {
+      color: var(--accent);
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 26px;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    .nav-links a,
+    .footer-link {
+      transition: color 160ms ease;
+    }
+
+    .nav-links a:hover,
+    .footer-link:hover {
+      color: var(--accent);
+    }
+
+    .nav-cta {
+      display: inline-flex;
+      min-height: 42px;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid rgb(189 145 244 / 40%);
+      border-radius: 999px;
+      padding: 0 17px;
+      color: var(--text);
+      background: rgb(168 121 232 / 12%);
+      font-size: 0.86rem;
+      font-weight: 700;
+      transition: background 160ms ease, transform 160ms ease;
+    }
+
+    .nav-cta:hover {
+      transform: translateY(-2px);
+      background: rgb(168 121 232 / 23%);
+    }
+
+    .hero {
+      display: grid;
+      min-height: 350px;
+      grid-template-columns: minmax(0, 1fr) auto;
+      align-items: center;
+      gap: 36px;
+      padding-block: 70px 62px;
+    }
+
+    .eyebrow,
+    .section-kicker {
+      margin: 0 0 12px;
+      color: var(--accent);
+      font-size: 0.76rem;
+      font-weight: 750;
+      letter-spacing: 0.13em;
+      text-transform: uppercase;
+    }
+
+    h1,
+    h2,
+    h3,
+    p {
+      margin-top: 0;
+    }
+
+    h1 {
+      max-width: 760px;
+      margin-bottom: 18px;
+      font-size: clamp(2.7rem, 7vw, 5.2rem);
+      font-weight: 780;
+      letter-spacing: -0.075em;
+      line-height: 1;
+    }
+
+    h1 span {
+      color: var(--accent);
+    }
+
+    .hero-copy {
+      max-width: 630px;
+      margin-bottom: 0;
+      color: var(--muted);
+      font-size: 1.05rem;
+    }
+
+    .hero-badge {
+      display: grid;
+      width: 118px;
+      height: 118px;
+      place-items: center;
+      border: 1px solid rgb(189 145 244 / 36%);
+      border-radius: 32px;
+      color: var(--accent);
+      background:
+        radial-gradient(circle at 30% 20%, rgb(189 145 244 / 25%), transparent 55%),
+        var(--surface);
+      box-shadow: var(--shadow);
+      font-size: 2rem;
+      font-weight: 800;
+      transform: rotate(4deg);
+    }
+
+    .section {
+      padding-block: 42px 82px;
+      border-top: 1px solid rgb(73 54 93 / 55%);
+    }
+
+    .section-heading {
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+      gap: 24px;
+      margin-bottom: 28px;
+    }
+
+    .section-kicker {
+      margin-bottom: 7px;
+    }
+
+    h2 {
+      margin-bottom: 0;
+      font-size: clamp(1.9rem, 4vw, 2.7rem);
+      letter-spacing: -0.06em;
+      line-height: 1.1;
+    }
+
+    .section-intro {
+      max-width: 440px;
+      margin-bottom: 2px;
+      color: var(--muted);
+      font-size: 0.93rem;
+    }
+
+    .project-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 20px;
+    }
+
+    .project-card {
+      min-width: 0;
+      overflow: hidden;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      background: linear-gradient(155deg, var(--surface-raised), var(--surface));
+      box-shadow: 0 10px 28px rgb(0 0 0 / 13%);
+      transition: border-color 180ms ease, transform 180ms ease, box-shadow 180ms ease;
+    }
+
+    .project-card:hover {
+      transform: translateY(-4px);
+      border-color: #8062a0;
+      box-shadow: 0 18px 36px rgb(0 0 0 / 24%);
+    }
+
+    .project-art {
+      position: relative;
+      display: flex;
+      min-height: 165px;
+      overflow: hidden;
+      align-items: flex-end;
+      padding: 19px;
+      background:
+        radial-gradient(circle at 80% 18%, rgb(230 204 255 / 27%), transparent 30%),
+        linear-gradient(135deg, #65448a, #34233f);
+    }
+
+    .project-art::before,
+    .project-art::after {
+      position: absolute;
+      border: 1px solid rgb(255 255 255 / 15%);
+      border-radius: 50%;
+      content: "";
+      pointer-events: none;
+    }
+
+    .project-art::before {
+      top: -62px;
+      right: -24px;
+      width: 190px;
+      height: 190px;
+    }
+
+    .project-art::after {
+      top: -34px;
+      right: 4px;
+      width: 135px;
+      height: 135px;
+    }
+
+    .project-card:nth-child(4n + 2) .project-art {
+      background:
+        radial-gradient(circle at 20% 15%, rgb(221 193 255 / 25%), transparent 32%),
+        linear-gradient(135deg, #51406e, #30223f);
+    }
+
+    .project-card:nth-child(4n + 3) .project-art {
+      background:
+        radial-gradient(circle at 78% 20%, rgb(227 194 255 / 24%), transparent 30%),
+        linear-gradient(135deg, #6b477b, #34233f);
+    }
+
+    .project-card:nth-child(4n) .project-art {
+      background:
+        radial-gradient(circle at 25% 80%, rgb(200 164 244 / 25%), transparent 32%),
+        linear-gradient(135deg, #493b70, #261e38);
+    }
+
+    .art-label {
+      position: relative;
+      z-index: 1;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      border: 1px solid rgb(255 255 255 / 19%);
+      border-radius: 999px;
+      padding: 6px 11px;
+      color: #fff;
+      background: rgb(22 15 31 / 34%);
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.07em;
+      text-transform: uppercase;
+      backdrop-filter: blur(8px);
+    }
+
+    .art-number {
+      color: rgb(255 255 255 / 70%);
+      font-size: 0.72rem;
+      font-weight: 750;
+      letter-spacing: 0.08em;
+    }
+
+    .project-info {
+      padding: 19px 20px 20px;
+    }
+
+    .project-meta {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      margin-bottom: 8px;
+      color: var(--accent);
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+
+    .project-info h3 {
+      margin-bottom: 7px;
+      font-size: 1.08rem;
+      letter-spacing: -0.03em;
+      line-height: 1.35;
+    }
+
+    .project-info p {
+      min-height: 44px;
+      margin-bottom: 17px;
+      color: var(--muted);
+      font-size: 0.87rem;
+      line-height: 1.55;
+    }
+
+    .project-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      color: #e2caff;
+      font-size: 0.86rem;
+      font-weight: 750;
+    }
+
+    .project-link span {
+      transition: transform 160ms ease;
+    }
+
+    .project-link:hover span {
+      transform: translate(3px, -3px);
+    }
+
+    .site-footer {
+      display: flex;
+      justify-content: space-between;
+      gap: 18px;
+      padding-block: 24px 32px;
+      border-top: 1px solid rgb(73 54 93 / 55%);
+      color: var(--muted);
+      font-size: 0.83rem;
+    }
+
+    @media (max-width: 900px) {
+      .project-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .hero-badge {
+        width: 96px;
+        height: 96px;
+      }
+    }
+
+    @media (max-width: 620px) {
+      .container {
+        width: calc(100% - 32px);
+      }
+
+      .nav {
+        min-height: 66px;
+      }
+
+      .nav-links {
+        gap: 14px;
+        font-size: 0.8rem;
+      }
+
+      .nav-cta {
+        display: none;
+      }
+
+      .hero {
+        min-height: auto;
+        grid-template-columns: 1fr;
+        gap: 24px;
+        padding-block: 58px 48px;
+      }
+
+      .hero-badge {
+        display: none;
+      }
+
+      .section {
+        padding-block: 34px 60px;
+      }
+
+      .section-heading {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      .project-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+      }
+
+      .project-art {
+        min-height: 145px;
+      }
+
+      .site-footer {
+        flex-direction: column;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *,
+      *::before,
+      *::after {
+        scroll-behavior: auto !important;
+        transition-duration: 0.01ms !important;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header class="site-header">
+    <nav class="nav container" aria-label="Navegación principal">
+      <a class="brand" href="#inicio">PROYECTO<span>.</span></a>
+      <div class="nav-links">
+        <a href="#proyectos">REPOSITORIO</a>
+        <a href="#contacto">CONTACTO</a>
+      </div>
+      <a class="nav-cta" href="#proyectos">Ver colección <span aria-hidden="true">↘</span></a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero container" id="inicio">
+      <div>
+        <p class="eyebrow">Libreria · de · 53 espacios</p>
+        <h1> Relación entre el estrés laboral y el bienestar<span>psicológico de miembros de la fuerza aeroespacial Colombiana.</span></h1>
+        <p class="hero-copy">
+          Trabajo de investigación que recopila referencias bibliográficas y recursos relacionados con el estudio del estrés laboral y el bienestar psicológico en miembros de la fuerza aeroespacial Colombiana.S
+        </p>
+      </div>
+      <div class="hero-badge" aria-hidden="true">53</div>
+    </section>
+
+    <section class="section" id="proyectos">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">Colección</p>
+            <h2>Referencias:</h2>
+          </div>
+          <p class="section-intro">
+            //Edita los títulos y descripciones y reemplaza cada enlace de ejemplo
+            por la dirección web que quieras compartir.
+          </p>
+        </div>
+
+        <div class="project-grid">
+          <article class="project-card" id="contenedor-01">
+            <div class="project-art"><span class="art-label">LIBRO</span><span class="art-number">01 / 54</span></div>
+            <div class="project-info"><div class="project-meta"><span>REFERENCIA</span><span>01</span></div><h3>Estrés laboral y bienestar psicológico en personal militar de la Ciudad de Piura 2023</h3><p>Abad Niño, S. E., & Fernandez Sernaque, E. I. (2024). Estrés laboral y bienestar psicológico en personal militar de la Ciudad de Piura, 2023 [Tesis de pregrado, Universidad César Vallejo]. Repositorio Institucional de la Universidad César Vallejo. </p><a class="project-link" href="https://repositorio.ucv.edu.pe/handle/20.500.12692/141709" target="_blank" rel="noopener noreferrer">Ver recurso <span aria-hidden="true">↗</span></a></div>
+          </article>
+          <article class="project-card" id="contenedor-02">
+            <div class="project-art"><span class="art-label">LIBRO</span><span class="art-number">02 / 54</span></div>
+            <div class="project-info"><div class="project-meta"><span>REFERENCIA</span><span>02</span></div><h3>Determinantes del estrés laboral y su impacto en el personal militar de la fuerza terrestre en la Brigada de Selva No. 21 “CÓNDOR”</h3><p>Aldaz, Y. (2026). Determinantes del estrés laboral y su impacto en el personal militar de la fuerza terrestre en la Brigada de Selva No. 21 “CÓNDOR” (Tesis de maestría). Universidad de las Américas, Quito.</p><a class="project-link" href="http://dspace.udla.edu.ec/handle/33000/19457" target="_blank" rel="noopener noreferrer">Ver recurso <span aria-hidden="true">↗</span></a></div>
+          </article>
+          <article class="project-card" id="contenedor-03">
+            <div class="project-art"><span class="art-label">LIBRO</span><span class="art-number">03 / 54</span></div>
+            <div class="project-info"><div class="project-meta"><span>REFERENCIA</span><span>03</span></div><h3>Presencia y afectación del síndrome de burnout en instrucciones de th-67 de la Escuela de Helicópteros para las Fuerzas Armadas de Colombia.</h3><p>Arboleda Medina, A., Ramírez, B., Ariza Ariza, L. G., & Rodríguez Guerrero, N. (2020).  Presencia y afectación del síndrome de burnout en instrucciones de th-67 de la Escuela de Helicópteros para las Fuerzas Armadas de Colombia. Revista Ciencia y Poder Aéreo, 15(2), 6-17.</p><a class="project-link" href="https://doi.org/10.18667/cienciaypoderaereo.679" target="_blank" rel="noopener noreferrer">Ver recurso <span aria-hidden="true">↗</span></a></div>
+          </article>
+          <article class="project-card" id="contenedor-04">
+            <div class="project-art"><span class="art-label">LIBRO</span><span class="art-number">04 / 54</span></div>
+            <div class="project-info"><div class="project-meta"><span>REFERENCIA</span><span>04</span></div><h3>Estrés laboral y creatividad en profesores desde el modelo de Karasek. Revista de Psicología</h3><p>Arias Gallegos, W. L., Montes Iturizaga, I., & Masías Salinas, M. A. (2014). Estrés laboral y creatividad en profesores desde el modelo de Karasek. Revista de Psicología, 16(1), 64–77. </p><a class="project-link" href="https://www.researchgate.net/publication/276290515" target="_blank" rel="noopener noreferrer">Ver recurso <span aria-hidden="true">↗</span></a></div>
+          </article>
+          <article class="project-card" id="contenedor-05">
+            <div class="project-art"><span class="art-label">LIBRO</span><span class="art-number">05 / 54</span></div>
+            <div class="project-info"><div class="project-meta"><span>REFERENCIA</span><span>05</span></div><h3>Modelos teóricos en la concepción del bienestar psicológico. CENCOMED (Actas del Congreso), Psiquiatría Infantil 2026.</h3><p>Artiles Concepción, T., Torres Rodríguez, I. L., & Matos Matos, L. (2026). Modelos teóricos en la concepción del bienestar psicológico. CENCOMED (Actas del Congreso), Psiquiatría Infantil 2026. </p><a class="project-link" href="https://eventospsiquiatriainfantil.sld.cu/index.php/PSIQUIAINFAN-2026/2026/paper/viewFile/128/186" target="_blank" rel="noopener noreferrer">Ver recurso <span aria-hidden="true">↗</span></a></div>
+          </article>
+          <article class="project-card" id="contenedor-06">
+            <div class="project-art"><span class="art-label">LIBRO</span><span class="art-number">06 / 54</span></div>
+            <div class="project-info"><div class="project-meta"><span>REFERENCIA</span><span>06</span></div><h3>Declaración de Helsinki de la AMM: Principios éticos para las investigaciones médicas con participantes humanos.</h3><p>Declaración de Helsinki de la AMM: Principios éticos para las investigaciones médicas con participantes humanos.</p><a class="project-link" href="https://www.wma.net/es/policies-post/declaracion-de-helsinki-de-la-amm-principios-eticos-para-las-investigaciones-medicas-en-seres-humanos/" target="_blank" rel="noopener noreferrer">Ver recurso <span aria-hidden="true">↗</span></a></div>
+          </article>
+          <article class="project-card" id="contenedor-07">
+            <div class="project-art"><span class="art-label">LIBRO</span><span class="art-number">07 / 54</span></div>
+            <div class="project-info"><div class="project-meta"><span>REFERENCIA</span><span>07</span></div><h3>Coping with recruiter stress: Hardiness, performance and well-being in US Army recruiters. Military Psychology.</h3><p>Bartone, P. T., & Bowles, S. V. (2020). Coping with recruiter stress: Hardiness, performance and well-being in US Army recruiters. Military Psychology, 32(5), 390–397. </p><a class="project-link" href="https://doi.org/10.1080/08995605.2020.1780061" target="_blank" rel="noopener noreferrer">Ver recurso <span aria-hidden="true">↗</span></a></div>
+          </article>
+          <article class="project-card" id="contenedor-08">
+            <div class="project-art"><span class="art-label">LIBRO</span><span class="art-number">08 / 54</span></div>
+            <div class="project-info"><div class="project-meta"><span>REFERENCIA</span><span>08</span></div><h3>Non-deployment factors affecting psychological wellbeing in military personnel: literature review. Journal of mental health (Abingdon, England).</h3><p>Brooks, S. K., & Greenberg, N. (2018). Non-deployment factors affecting psychological wellbeing in military personnel: literature review. Journal of mental health (Abingdon, England), 27(1), 80–90. </p><a class="project-link" href="https://doi.org/10.1080/09638237.2016.1276536" target="_blank" rel="noopener noreferrer">Ver recurso <span aria-hidden="true">↗</span></a></div>
+          </article>
+          <article class="project-card" id="contenedor-09">
+            <div class="project-art"><span class="art-label">LIBRO</span><span class="art-number">09 / 54</span></div>
+            <div class="project-info"><div class="project-meta"><span>REFERENCIA</span><span>09</span></div><h3>IMPACTO DEL ESTRÉS LABORAL EN EL BIENESTAR PSICOLÓGICO DEL PERSONAL DE UN HOSPITAL PÚBLICO DE MEDELLÍN, COLOMBIA.</h3><p>Cano-García, Mariluz, Ruiz-Blandòn, Daniel Alexander, Vergara-Velez, Isabella, & Chaverra-Gil, Laura Cristina. (2023). IMPACTO DEL ESTRÉS LABORAL EN EL BIENESTAR PSICOLÓGICO DEL PERSONAL DE UN HOSPITAL PÚBLICO DE MEDELLÍN, COLOMBIA. Ciencia y enfermería, 29, 31. Epub 10 de enero de 2024.</p><a class="project-link" href="https://dx.doi.org/10.29393/ce29-31iemv50031" target="_blank" rel="noopener noreferrer">Ver recurso <span aria-hidden="true">↗</span></a></div>
+          </article>
+          <article class="project-card" id="contenedor-10">
+            <div class="project-art"><span class="art-label">LIBRO</span><span class="art-number">10 / 54</span></div>
+            <div class="project-info"><div class="project-meta"><span>REFERENCIA</span><span>10</span></div><h3>Factores psicosociales, stress y su relación con el desempeño: Comparación entre centros de salud. Salud de los Trabajadores.</h3><p>Chiang Vega, M., Gómez Fuentealba, N., & Sigoña Igor, M. (2013). Factores psicosociales, stress y su relación con el desempeño: Comparación entre centros de salud. Salud de los Trabajadores, 21(2), 111–128.</p><a class="project-link" href="https://www.redalyc.org/pdf/3758/375839307002.pdf" target="_blank" rel="noopener noreferrer">Ver recurso <span aria-hidden="true">↗</span></a></div>
+          </article>
+          <article class="project-card" id="contenedor-11">
+            <div class="project-art"><span class="art-label">LIBRO</span><span class="art-number">11 / 54</span></div>
+            <div class="project-info"><div class="project-meta"><span>REFERENCIA</span><span>11</span></div><h3>Congreso de la República de Colombia. (2006, 6 de septiembre). Ley 1090 de 2006.</h3><p>Congreso de la República de Colombia. (2006, 6 de septiembre). Ley 1090 de 2006, por la cual se reglamenta el ejercicio de la profesión de Psicología, se dicta el Código Deontológico y Bioético y otras disposiciones. Departamento Administrativo de la Función Pública.</p><a class="project-link" href="https://www.funcionpublica.gov.co/eva/gestornormativo/norma_pdf.php?i=66205" target="_blank" rel="noopener noreferrer">Ver recurso <span aria-hidden="true">↗</span></a></div>
+          </article>
+          <article class="project-card" id="contenedor-12">
+            <div class="project-art"><span class="art-label">LIBRO</span><span class="art-number">12 / 54</span></div>
+            <div class="project-info"><div class="project-meta"><span>REFERENCIA</span><span>12</span></div><h3>Adaptación española de las escalas de bienestar psicológico de Ryff. Psicothema.</h3><p>Díaz, D., Rodríguez-Carvajal, R., Blanco, A., Moreno- Jiménez, B., Gallardo, I., Valle, C., & Van Dierendonck, D. (2006). Adaptación española de las escalas de bienestar psicológico de Ryff. Psicothema, 18(3), 572 - 577.</p><a class="project-link" href="http://www.psicothema.com/psicothema.asp?id=3255" target="_blank" rel="noopener noreferrer">Ver recurso <span aria-hidden="true">↗</span></a></div>
+          </article>
+          <article class="project-card" id="contenedor-13">
+            <div class="project-art"><span class="art-label">LIBRO</span><span class="art-number">13 / 54</span></div>
+            <div class="project-info"><div class="project-meta"><span>REFERENCIA</span><span>13</span></div><h3>Factores de riesgo psicosociales, estrés y sus consecuencias individuales y organizacionales: Modelo demanda-control de Karasek (1979).</h3><p>Díez Valdés, V. (2015). Factores de riesgo psicosociales, estrés y sus consecuencias individuales y organizacionales: Modelo demanda-control de Karasek (1979) [Tesis doctoral, Universidad Nacional de Educación a Distancia]. Repositorio Institucional de la UNED. </p><a class="project-link" href="https://oai.e-spacio.uned.es/server/api/core/bitstreams/b22061a1-2aaf-4e2a-a8df-bef512bca3e4/content" target="_blank" rel="noopener noreferrer">Ver recurso <span aria-hidden="true">↗</span></a></div>
+          </article>
+          <article class="project-card" id="contenedor-14">
+            <div class="project-art"><span class="art-label">LIBRO</span><span class="art-number">14 / 54</span></div>
+            <div class="project-info"><div class="project-meta"><span>REFERENCIA</span><span>14</span></div><h3>BENEFITS OF PSYCAP TRAINING ON THE WELLBEING IN MILITARY PERSONNEL.</h3><p>Eduardo Hernández Varas, & Mónica García Silgo. (2021). BENEFITS OF PSYCAP TRAINING ON THE WELLBEING IN MILITARY PERSONNEL. [Beneficios del Entrenamiento en PsyCap sobre el Bienestar del Personal Militar.] Psicothema, 33(4), 536-543.</p><a class="project-link" href="https://doi.org/10.7334/psicothema2021.151" target="_blank" rel="noopener noreferrer">Ver recurso <span aria-hidden="true">↗</span></a></div>
+          </article>
+          <article class="project-card" id="contenedor-15">
+            <div class="project-art"><span class="art-label">LIBRO</span><span class="art-number">15 / 54</span></div>
+            <div class="project-info"><div class="project-meta"><span>REFERENCIA</span><span>15</span></div><h3>Programa de Transparencia y Ética Pública FAC 2025: Estrategia de lucha contra la corrupción y de atención al ciudadano.</h3><p>Fuerza Aeroespacial Colombiana. (2025). Programa de Transparencia y Ética Pública FAC 2025: Estrategia de lucha contra la corrupción y de atención al ciudadano.</p><a class="project-link" href="https://www.fac.mil.co/sites/default/files/2025-01/programa_de_transparencia_y_etica_publica_fac_2025_0.pdf?utm_source" target="_blank" rel="noopener noreferrer">Ver recurso <span aria-hidden="true">↗</span></a></div>
+          </article>
+          <article class="project-card" id="contenedor-16">
+            <div class="project-art"><span class="art-label">LIBRO</span><span class="art-number">16 / 54</span></div>
+            <div class="project-info"><div class="project-meta"><span>REFERENCIA</span><span>16</span></div><h3>Percepción de la calidad de vida y la salud mental en oficiales de la Fuerza Aérea Colombiana. Revista Med.</h3><p>González Quevedo, L. A., & Sanabria Ferrand, P. A. (2010). Percepción de la calidad de vida y la salud mental en oficiales de la Fuerza Aérea Colombiana. Revista Med, 18(1), 115–122.</p><a class="project-link" href="https://revistas.umng.edu.co/index.php/rmed/article/view/1305/1035" target="_blank" rel="noopener noreferrer">Ver recurso <span aria-hidden="true">↗</span></a></div>
+          </article>
+          <article class="project-card" id="contenedor-17">
+            <div class="project-art"><span class="art-label">LIBRO</span><span class="art-number">17 / 54</span></div>
+            <div class="project-info"><div class="project-meta"><span>REFERENCIA</span><span>17</span></div><h3>Síndrome de Burnout e impulsividad en el personal militar ecuatorianos encargado de los centros de privación de libertad.</h3><p>Guerra Bonilla, B. S., & Pilco Guadalupe, G. A. (2025). Síndrome de Burnout e impulsividad en el personal militar ecuatorianos encargado de los centros de privación de libertad. Arandu UTIC, 12(1), 4050–4069.</p><a class="project-link" href="https://doi.org/10.69639/arandu.v12i1.856" target="_blank" rel="noopener noreferrer">Ver recurso <span aria-hidden="true">↗</span></a></div>
+          </article>
+          <article class="project-card" id="contenedor-18">
+            <div class="project-art"><span class="art-label">LIBRO</span><span class="art-number">18 / 54</span></div>
+            <div class="project-info"><div class="project-meta"><span>REFERENCIA</span><span>18</span></div><h3>ENTRE MENTE Y MISIÓN: BIENESTAR PSICOLÓGICO DEL PERSONAL MILITAR.</h3><p>Heredia-Gálvez, S. A., Martínez-Vélez, F. A., Tigse-Bravo, W. P., Vásquez-Briones, R. P., & Gallardo-Cueva, M. A. (2025). ENTRE MENTE Y MISIÓN: BIENESTAR PSICOLÓGICO DEL PERSONAL MILITAR. Veredas Do Direito, 22, e223403.</p><a class="project-link" href="https://doi.org/10.18623/rvd.v22.n3.3403" target="_blank" rel="noopener noreferrer">Ver recurso <span aria-hidden="true">↗</span></a></div>
+          </article>
+          <article class="project-card" id="contenedor-19">
+            <div class="project-art"><span class="art-label">LIBRO</span><span class="art-number">19 / 54</span></div>
+            <div class="project-info"><div class="project-meta"><span>REFERENCIA</span><span>19</span></div><h3>WORK SATISFACTION AND HEALTH SELF-PERCEPTION AS PREDICTORS OF PSYCHOLOGICAL WELLBEING IN MILITARY PERSONNEL.</h3><p>Hernández-Varas, E., Labrador Encinas, F. J., & Mariano Méndez Suárez. (2019). PSYCHOLOGICAL CAPITAL, WORK SATISFACTION AND HEALTH SELF-PERCEPTION AS PREDICTORS OF PSYCHOLOGICAL WELLBEING IN MILITARY PERSONNEL. [Capital psicológico, satisfacción laboral y salud percibida como predictores del bienestar psicológico en el personal militar.] Psicothema, 31(3), 277-283.</p><a class="project-link" href="https://doi.org/10.7334/psicothema2019.22" target="_blank" rel="noopener noreferrer">Ver recurso <span aria-hidden="true">↗</span></a></div>
+          </article>
+          <article class="project-card" id="contenedor-20">
+            <div class="project-art"><span class="art-label">LIBRO</span><span class="art-number">20 / 54</span></div>
+            <div class="project-info"><div class="project-meta"><span>REFERENCIA</span><span>20</span></div><h3>Effects of Social Support on the Stress-Health Relationship: Gender Comparison among Military Personnel. International Journal of Environmental Research and Public Health.</h3><p>Hsieh, C.-M., & Tsai, B.-K. (2019). Effects of Social Support on the Stress-Health Relationship: Gender Comparison among Military Personnel. International Journal of Environmental Research and Public Health, 16(8), 1317.</p><a class="project-link" href="https://doi.org/10.3390/ijerph16081317" target="_blank" rel="noopener noreferrer">Ver recurso <span aria-hidden="true">↗</span></a></div>
+          </article>
+          <article class="project-card" id="contenedor-21">
+            <div class="project-art"><span class="art-label">LIBRO</span><span class="art-number">21 / 54</span></div>
+            <div class="project-info"><div class="project-meta"><span>REFERENCIA</span><span>21</span></div><h3>The mental health of Chinese military personnel: a cross-sectional epidemiological study.</h3><p>Jing, K., Feng, Z., Xu, J., He, Y., Tang, Q., Zhang, Q., Wang, N., Xiao, Y., Gao, B., Xue, B., Wu, L., & Zhao, M. (2024). The mental health of Chinese military personnel: a cross-sectional epidemiological study. BMC Public Health, 24, 3525.</p><a class="project-link" href="https://doi.org/10.1186/s12889-024-20969-w" target="_blank" rel="noopener noreferrer">Ver recurso <span aria-hidden="true">↗</span></a></div>
+          </article>
+          <article class="project-card" id="contenedor-22">
+            <div class="project-art"><span class="art-label">LIBRO</span><span class="art-number">22 / 54</span></div>
+            <div class="project-info"><div class="project-meta"><span>REFERENCIA</span><span>22</span></div><h3>Job demands, job decision latitude, and mental strain: Implications for job redesign. Administrative Science Quarterly.</h3><p>Karasek, R. A. (1979). Job demands, job decision latitude, and mental strain: Implications for job redesign. Administrative Science Quarterly, 24(2), 285–308.</p><a class="project-link" href="https://doi.org/10.2307/2392498" target="_blank" rel="noopener noreferrer">Ver recurso <span aria-hidden="true">↗</span></a></div>
+          </article>
+          <article class="project-card" id="contenedor-23">
+            <div class="project-art"><span class="art-label">LIBRO</span><span class="art-number">23 / 54</span></div>
+            <div class="project-info"><div class="project-meta"><span>REFERENCIA</span><span>23</span></div><h3>Security providing leadership and work stress in Spanish Air Force. Military Psychology.</h3><p>Lobato, P., Moriano, J. A., Laguía, A., Molero, F., & Mikulincer, M. (2024). Security providing leadership and work stress in Spanish Air Force. Military Psychology, 36(5), 504–515.</p><a class="project-link" href="https://doi.org/10.1080/08995605.2023.2218785" target="_blank" rel="noopener noreferrer">Ver recurso <span aria-hidden="true">↗</span></a></div>
+          </article>
+          <article class="project-card" id="contenedor-24">
+            <div class="project-art"><span class="art-label">LIBRO</span><span class="art-number">24 / 54</span></div>
+            <div class="project-info"><div class="project-meta"><span>REFERENCIA</span><span>24</span></div><h3>RELACIÓN ENTRE EL ESTRÉS LABORAL Y EL BIENESTAR LABORAL EN PERSONAL DE LA SALUD DEL ECUADOR EN EL CONTEXTO DEL COVID-19.</h3><p>López-Barrionuevo, O., Peralta-Beltrán, Á., González-Salas, R., Moreta-Herrer, R., & Mayorga-Lascano, M. (2023). RELACIÓN ENTRE EL ESTRÉS LABORAL Y EL BIENESTAR LABORAL EN PERSONAL DE LA SALUD DEL ECUADOR EN EL CONTEXTO DEL COVID-19. [RELATIONSHIP BETWEEN WORK STRESS AND WORK WELL-BEING IN HEALTH PERSONNEL IN ECUADOR IN COVID-19 CONTEXT] Diversitas, 19(2)</p><a class="project-link" href="https://doi.org/10.15332/22563067.9377" target="_blank" rel="noopener noreferrer">Ver recurso <span aria-hidden="true">↗</span></a></div>
+          </article>
+          <article class="project-card" id="contenedor-25">
+            <div class="project-art"><span class="art-label">LIBRO</span><span class="art-number">25 / 54</span></div>
+            <div class="project-info"><div class="project-meta"><span>REFERENCIA</span><span>25</span></div><h3>The wellbeing of Italian peacekeeper military: Psychological resources, quality of life and internalizing symptoms. Frontiers in Psychology.</h3><p>Loscalzo, Y., Giannini, M., Gori, A., & Di Fabio, A. (2018). The wellbeing of Italian peacekeeper military: Psychological resources, quality of life and internalizing symptoms. Frontiers in Psychology, 9, 103.</p><a class="project-link" href="https://doi.org/10.3389/fpsyg.2018.00103" target="_blank" rel="noopener noreferrer">Ver recurso <span aria-hidden="true">↗</span></a></div>
+          </article>
+          <article class="project-card" id="contenedor-26">
+            <div class="project-art"><span class="art-label">LIBRO</span><span class="art-number">26 / 54</span></div>
+            <div class="project-info"><div class="project-meta"><span>REFERENCIA</span><span>26</span></div><h3>Impacto de los riesgos psicosociales, estrés y toma de decisiones en la seguridad operacional. Ciencia y Poder Aéreo</h3><p>Lozano Plazas, J. E. & Pico Quintero, N. (2022). Impacto de los riesgos psicosociales, estrés y toma de decisiones en la seguridad operacional. Ciencia y Poder Aéreo, 17(1), 37-54.</p><a class="project-link" href="https://doi.org/10.18667/cienciaypoderaereo.690" target="_blank" rel="noopener noreferrer">Ver recurso <span aria-hidden="true">↗</span></a></div>
+          </article>
+          <article class="project-card" id="contenedor-27">
+            <div class="project-art"><span class="art-label">LIBRO</span><span class="art-number">27 / 54</span></div>
+            <div class="project-info"><div class="project-meta"><span>REFERENCIA</span><span>27</span></div><h3>Estrés laboral, Autoeficacia y Calidad de vida relacionada con la salud en controladores de tránsito aéreo de Argentina.</h3><p>Marquez, B., & Depaula, P. D. (2025). Estrés laboral, Autoeficacia y Calidad de vida relacionada con la salud en controladores de tránsito aéreo de Argentina. Revista Iberoamericana ConCiencia, 10(1), 61-76.</p><a class="project-link" href="https://doi.org/10.70298/ConCiencia.10-1.6" target="_blank" rel="noopener noreferrer">Ver recurso <span aria-hidden="true">↗</span></a></div>
+          </article>
+          <article class="project-card" id="contenedor-28">
+            <div class="project-art"><span class="art-label">LIBRO</span><span class="art-number">28 / 54</span></div>
+            <div class="project-info"><div class="project-meta"><span>REFERENCIA</span><span>28</span></div><h3>Propiedades psicométricas de la escala de bienestar psicológico de Ryff en población mexicana.</h3><p>Medina-Calvillo, M. A., Gutiérrez-Hernández, C. Y., & Padrós-Blázquez, F. (2013). Propiedades psicométricas de la escala de bienestar psicológico de Ryff en población mexicana. Revista Educación y Desarrollo, 27, 25–37.</p><a class="project-link" href="https://www.academia.edu/44159520/Propiedades_psicom%C3%A9tricas_de_la_escala_de_bienestar_psicol%C3%B3gico_de_Ryff_en_poblaci%C3%B3n_mexicana_Psychometric_Properties_of_Ryffs_Scale_of_Psychological_Well_being_in_a_Mexican_Population" target="_blank" rel="noopener noreferrer">Ver recurso <span aria-hidden="true">↗</span></a></div>
+          </article>
+          <article class="project-card" id="contenedor-29">
+            <div class="project-art"><span class="art-label">LIBRO</span><span class="art-number">29 / 54</span></div>
+            <div class="project-info"><div class="project-meta"><span>REFERENCIA</span><span>29</span></div><h3>Ministerio de Salud. (1993, 4 de octubre). Resolución 8430 de 1993.</h3><p>Ministerio de Salud. (1993, 4 de octubre). Resolución 8430 de 1993: Por la cual se establecen las normas científicas, técnicas y administrativas para la investigación en salud.</p><a class="project-link" href="https://www.minsalud.gov.co/sites/rid/lists/bibliotecadigital/ride/de/dij/resolucion-8430-de-1993.pdf" target="_blank" rel="noopener noreferrer">Ver recurso <span aria-hidden="true">↗</span></a></div>
+          </article>
+          <article class="project-card" id="contenedor-30">
+            <div class="project-art"><span class="art-label">LIBRO</span><span class="art-number">30 / 54</span></div>
+            <div class="project-info"><div class="project-meta"><span>REFERENCIA</span><span>30</span></div><h3>Estrés laboral y su incidencia en el personal de las instituciones gubernamentales de Sonora (México): Análisis jurídico y psicosocial desde la Ley Federal del Trabajo. Ciencia Latina Revista Científica Multidisciplinar.</h3><p>Miranda Liogon, A. (2025). Estrés laboral y su incidencia en el personal de las instituciones gubernamentales de Sonora (México): Análisis jurídico y psicosocial desde la Ley Federal del Trabajo. Ciencia Latina Revista Científica Multidisciplinar, 9(5), 9345–9366.</p><a class="project-link" href="https://doi.org/10.37811/cl_rcm.v9i5.20265" target="_blank" rel="noopener noreferrer">Ver recurso <span aria-hidden="true">↗</span></a></div>
+          </article>
+          <article class="project-card" id="contenedor-31">
+            <div class="project-art"><span class="art-label">LIBRO</span><span class="art-number">31 / 54</span></div>
+            <div class="project-info"><div class="project-meta"><span>REFERENCIA</span><span>31</span></div><h3>Síndrome de Burnout y Bienestar Psicológico en el Personal Militar Huancayo – 2024.</h3><p>Molina Tomas, J. J., & Soto Solis, J. Z. (2024). Síndrome de Burnout y Bienestar Psicológico en el Personal Militar Huancayo - 2024 [Tesis de licenciatura, Universidad Peruana Los Andes]. Repositorio Institucional UPLA.</p><a class="project-link" href="https://repositorio.upla.edu.pe/backend/api/core/bitstreams/7a008bfb-5f71-4b7d-9a0c-e88f4ceecfdb/cggontent" target="_blank" rel="noopener noreferrer">Ver recurso <span aria-hidden="true">↗</span></a></div>
+          </article>
+          <article class="project-card" id="contenedor-32">
+            <div class="project-art"><span class="art-label">LIBRO</span><span class="art-number">32 / 54</span></div>
+            <div class="project-info"><div class="project-meta"><span>REFERENCIA</span><span>32</span></div><h3>Estrategias de control de emociones y reducción del estrés en el Personal de Tropa Servicio Militar Voluntario en el Agrupamiento de Ingeniería, Villarica, 2023.</h3><p>Navarro Hidalgo, G. R. (2024). Estrategias de control de emociones y reducción del estrés en el Personal de Tropa Servicio Militar Voluntario en el Agrupamiento de Ingeniería, Villarica, 2023 [Tesis doctoral, Universidad Nacional de Educación Enrique Guzmán y Valle]. Repositorio Institucional UNE.</p><a class="project-link" href="https://repositorio.une.edu.pe/server/api/core/bitstreams/c1efe0f8-96c4-4039-911d-3281e29b7939/content" target="_blank" rel="noopener noreferrer">Ver recurso <span aria-hidden="true">↗</span></a></div>
+          </article>
+          <article class="project-card" id="contenedor-33">
+            <div class="project-art"><span class="art-label">LIBRO</span><span class="art-number">33 / 54</span></div>
+            <div class="project-info"><div class="project-meta"><span>REFERENCIA</span><span>33</span></div><h3>Incidencia de mindfulness y qi gong sobre el estado de salud, bienestar psicológico, satisfacción vital y estrés laboral. Revista Colombiana de Psicología.</h3><p>Oblitas, L., Turbay, R., Soto, K., Crissien, T., Fernando, O., Puello, M., & Ucrós, M. (2017). Incidencia de mindfulness y qi gong sobre el estado de salud, bienestar psicológico, satisfacción vital y estrés laboral. Revista Colombiana de Psicología, 26(1), 99-113.</p><a class="project-link" href="https://doi.org/10.15446/rcp.v26n1.54371" target="_blank" rel="noopener noreferrer">Ver recurso <span aria-hidden="true">↗</span></a></div>
+          </article>
+          <article class="project-card" id="contenedor-34">
+            <div class="project-art"><span class="art-label">LIBRO</span><span class="art-number">34 / 54</span></div>
+            <div class="project-info"><div class="project-meta"><span>REFERENCIA</span><span>34</span></div><h3>La salud mental en el trabajo.</h3><p>Organización Mundial de la Salud. (2024, 2 de septiembre). La salud mental en el trabajo.</p><a class="project-link" href="https://www.who.int/es/news-room/fact-sheets/detail/mental-health-at-work" target="_blank" rel="noopener noreferrer">Ver recurso <span aria-hidden="true">↗</span></a></div>
+          </article>
+          <article class="project-card" id="contenedor-35">
+            <div class="project-art"><span class="art-label">LIBRO</span><span class="art-number">35 / 54</span></div>
+            <div class="project-info"><div class="project-meta"><span>REFERENCIA</span><span>35</span></div><h3>Pautas éticas internacionales para la investigación relacionada con la salud con seres humanos (4.ª ed.).</h3><p>Pautas éticas internacionales para la investigación relacionada con la salud con seres humanos (4.ª ed.).</p><a class="project-link" href="https://cioms.ch/wp-content/uploads/2017/12/CIOMS-EthicalGuideline_SP_INTERIOR-FINAL.pdf" target="_blank" rel="noopener noreferrer">Ver recurso <span aria-hidden="true">↗</span></a></div>
+          </article>
+          <article class="project-card" id="contenedor-36">
+            <div class="project-art"><span class="art-label">LIBRO</span><span class="art-number">36 / 54</span></div>
+            <div class="project-info"><div class="project-meta"><span>REFERENCIA</span><span>36</span></div><h3>Bienestar psicológico y satisfacción con la vida en militares Ayacucho, 2021.</h3><p>Ortega Alarcón, Y. A. (2021). Bienestar psicológico y satisfacción con la vida en militares Ayacucho, 2021 [Tesis de licenciatura, Universidad Católica Los Ángeles de Chimbote]. Repositorio Institucional ULADECH.</p><a class="project-link" href="https://repositorio.uladech.edu.pe/bitstream/handle/20.500.13032/25617/BIENESTAR_PSICOLOGICO_SATISFACCION_CON_LA_VIDA_ORTEGA_ALARCON_YESSENIA_ALONDRA.pdf?sequence=1&isAllowed=y&utm_source" target="_blank" rel="noopener noreferrer">Ver recurso <span aria-hidden="true">↗</span></a></div>
+          </article>
+          <article class="project-card" id="contenedor-37">
+            <div class="project-art"><span class="art-label">LIBRO</span><span class="art-number">37 / 54</span></div>
+            <div class="project-info"><div class="project-meta"><span>REFERENCIA</span><span>37</span></div><h3>Impacto del estrés laboral sobre la salud mental del personal militar: Una revisión sistemática.</h3><p>Panchi Moreano, D. L. (2026). Impacto del estrés laboral sobre la salud mental del personal militar: Una revisión sistemática. Scientia Andes, 2(3), 29–49.</p><a class="project-link" href="https://doi.org/10.64230/sca.v2i3.26" target="_blank" rel="noopener noreferrer">Ver recurso <span aria-hidden="true">↗</span></a></div>
+          </article>
+          <article class="project-card" id="contenedor-38">
+            <div class="project-art"><span class="art-label">LIBRO</span><span class="art-number">38 / 54</span></div>
+            <div class="project-info"><div class="project-meta"><span>REFERENCIA</span><span>38</span></div><h3>¿Qué es el estrés laboral y cómo medirlo?</h3><p>Patlán Pérez, J. (2019). ¿Qué es el estrés laboral y cómo medirlo? Salud Uninorte, 35(1), 156–184.</p><a class="project-link" href="http://www.scielo.org.co/scielo.php?script=sci_arttext&pid=S0120-55522019000100156" target="_blank" rel="noopener noreferrer">Ver recurso <span aria-hidden="true">↗</span></a></div>
+          </article>
+          <article class="project-card" id="contenedor-39">
+            <div class="project-art"><span class="art-label">LIBRO</span><span class="art-number">39 / 54</span></div>
+            <div class="project-info"><div class="project-meta"><span>REFERENCIA</span><span>39</span></div><h3>Bienestar psicológico, global y por dimensión, en universitarios mexicanos: revisión sistemática.</h3><p>Ramírez Enríquez, S. I., Quintana Arroyo, P., & Barrón Luján, J. C. (2023). Bienestar psicológico, global y por dimensión, en universitarios mexicanos: revisión sistemática. Psicumex, 13, 1–17.</p><a class="project-link" href="https://doi.org/10.36793/psicumex.v13i1.485" target="_blank" rel="noopener noreferrer">Ver recurso <span aria-hidden="true">↗</span></a></div>
+          </article>
+          <article class="project-card" id="contenedor-40">
+            <div class="project-art"><span class="art-label">LIBRO</span><span class="art-number">40 / 54</span></div>
+            <div class="project-info"><div class="project-meta"><span>REFERENCIA</span><span>40</span></div><h3>Síndrome de Burnout y su relación con el desempeño laboral del personal militar del Servicio de Abastecimiento Técnico de la Fuerza Aérea del Perú en Lima en el año 2024.</h3><p>Rey Benavente, C. A. (2025). Síndrome de Burnout y su relación con el desempeño laboral del personal militar del Servicio de Abastecimiento Técnico de la Fuerza Aérea del Perú en Lima en el año 2024 [Tesis de maestría, Universidad San Ignacio de Loyola].</p><a class="project-link" href="https://repositorio.usil.edu.pe/server/api/core/bitstreams/f5ef3fbc-5626-4826-852d-9faf4b5ab86b/content?utm_source" target="_blank" rel="noopener noreferrer">Ver recurso <span aria-hidden="true">↗</span></a></div>
+          </article>
+          <article class="project-card" id="contenedor-41">
+            <div class="project-art"><span class="art-label">LIBRO</span><span class="art-number">41 / 54</span></div>
+            <div class="project-info"><div class="project-meta"><span>REFERENCIA</span><span>41</span></div><h3>Estudio psicométrico de la Escala de Bienestar Psicológico en militares argentinos.</h3><p>Reyna Barajas, G. V., Delfino, G. I., & Mele, S. V. (2013). Estudio psicométrico de la Escala de Bienestar Psicológico en militares argentinos. V Congreso Internacional de Investigación y Práctica Profesional en Psicología, XX Jornadas de Investigación, Noveno Encuentro de Investigadores en Psicología del MERCOSUR, Facultad de Psicología, Universidad de Buenos Aires.</p><a class="project-link" href="https://www.aacademica.org/000-054/593.pdf" target="_blank" rel="noopener noreferrer">Ver recurso <span aria-hidden="true">↗</span></a></div>
+          </article>
+          <article class="project-card" id="contenedor-42">
+            <div class="project-art"><span class="art-label">LIBRO</span><span class="art-number">42 / 54</span></div>
+            <div class="project-info"><div class="project-meta"><span>REFERENCIA</span><span>42</span></div><h3>Prevalence of burnout syndrome in military personnel at the National Geographic Institute of Peru.</h3><p>Rojas, M. C. C., Maggia, J. A. U., & Loayza, E. I. L. (2022). Prevalence of burnout syndrome in military personnel at the National Geographic Institute of Peru. [Prevalencia del síndrome de burnout en personal militar del Instituto Geográfico Nacional del Perú] Enfermería Global, 21(2), 436-446.</p><a class="project-link" href="https://doi.org/10.6018/eglobal.489281" target="_blank" rel="noopener noreferrer">Ver recurso <span aria-hidden="true">↗</span></a></div>
+          </article>
+          <article class="project-card" id="contenedor-43">
+            <div class="project-art"><span class="art-label">LIBRO</span><span class="art-number">43 / 54</span></div>
+            <div class="project-info"><div class="project-meta"><span>REFERENCIA</span><span>43</span></div><h3>Bienestar psicológico: Una revisión teórica.</h3><p>Rozas Calderón, V., & Enciso Sotomayor, E. (2025). Bienestar psicológico: Una revisión teórica. Vive Revista de Salud, 8(22), 250–265.</p><a class="project-link" href="https://www.scielo.org.bo/scielo.php?script=sci_arttext&pid=S2664-32432025000100250" target="_blank" rel="noopener noreferrer">Ver recurso <span aria-hidden="true">↗</span></a></div>
+          </article>
+          <article class="project-card" id="contenedor-44">
+            <div class="project-art"><span class="art-label">LIBRO</span><span class="art-number">44 / 54</span></div>
+            <div class="project-info"><div class="project-meta"><span>REFERENCIA</span><span>44</span></div><h3>Psychological well-being and resilience assessment of Brazilian Navy military personnel during a long-term mission. Biomedical Journal of Scientific & Technical Research.</h3><p>Ruela, H. S., Medeiros, D. C., Abreu, N. C. A. S., & Cabral, N. B. A. (2024). Psychological well-being and resilience assessment of Brazilian Navy military personnel during a long-term mission. Biomedical Journal of Scientific & Technical Research, 54(3), 45877–45882.</p><a class="project-link" href="https://doi.org/10.26717/BJSTR.2024.54.008549" target="_blank" rel="noopener noreferrer">Ver recurso <span aria-hidden="true">↗</span></a></div>
+          </article>
+          <article class="project-card" id="contenedor-45">
+            <div class="project-art"><span class="art-label">LIBRO</span><span class="art-number">45 / 54</span></div>
+            <div class="project-info"><div class="project-meta"><span>REFERENCIA</span><span>45</span></div><h3>Happiness is everything, or is it? Explorations on the meaning of psychological well-being. Journal of Personality and Social Psychology.</h3><p>Ryff, C. D. (1989). Happiness is everything, or is it? Explorations on the meaning of psychological well-being. Journal of Personality and Social Psychology, 57(6), 1069–1081.</p><a class="project-link" href="https://doi.org/10.1037/0022-3514.57.6.1069" target="_blank" rel="noopener noreferrer">Ver recurso <span aria-hidden="true">↗</span></a></div>
+          </article>
+          <article class="project-card" id="contenedor-46">
+            <div class="project-art"><span class="art-label">LIBRO</span><span class="art-number">46 / 54</span></div>
+            <div class="project-info"><div class="project-meta"><span>REFERENCIA</span><span>46</span></div><h3>Análisis de los niveles de estrés laboral en el personal militar profesional de la III División de Ejército Tarqui.</h3><p>Saltos Piedra, M. L. (2024). Análisis de los niveles de estrés laboral en el personal militar profesional de la III División de Ejército Tarqui [Trabajo de graduación, Universidad del Azuay]. Repositorio Institucional de la Universidad del Azuay.</p><a class="project-link" href="http://dspace.uazuay.edu.ec/handle/datos/15180" target="_blank" rel="noopener noreferrer">Ver recurso <span aria-hidden="true">↗</span></a></div>
+          </article>
+          <article class="project-card" id="contenedor-47">
+            <div class="project-art"><span class="art-label">LIBRO</span><span class="art-number">47 / 54</span></div>
+            <div class="project-info"><div class="project-meta"><span>REFERENCIA</span><span>47</span></div><h3>Prevalence of burnout among military personnel in the plateau region of China: a cross-sectional survey</h3><p>Shi, L., Ren, F., Xin, S., Sun, Q., Li, D.-N., Li, K., & Wang, Y. (2024). Prevalence of burnout among military personnel in the plateau region of China: a cross-sectional survey. BMC Public Health, 24, 1897.</p><a class="project-link" href="https://doi.org/10.1186/s12889-024-19340-W" target="_blank" rel="noopener noreferrer">Ver recurso <span aria-hidden="true">↗</span></a></div>
+          </article>
+          <article class="project-card" id="contenedor-48">
+            <div class="project-art"><span class="art-label">LIBRO</span><span class="art-number">48 / 54</span></div>
+            <div class="project-info"><div class="project-meta"><span>REFERENCIA</span><span>48</span></div><h3>Stress and Psychological Well-Being in Military Gendarmes. Social Sciences.</h3><p>Turliuc, M. N., & Balcan, A.-D. (2023). Stress and Psychological Well-Being in Military Gendarmes. Social Sciences, 12(9), 517.</p><a class="project-link" href="https://doi.org/10.3390/socsci12090517" target="_blank" rel="noopener noreferrer">Ver recurso <span aria-hidden="true">↗</span></a></div>
+          </article>
+          <article class="project-card" id="contenedor-49">
+            <div class="project-art"><span class="art-label">LIBRO</span><span class="art-number">49 / 54</span></div>
+            <div class="project-info"><div class="project-meta"><span>REFERENCIA</span><span>49</span></div><h3>Burnout and post-traumatic stress disorders in police officers: Systematic review and meta-analysis.</h3><p>Ugwu, L. E., & Idemudia, E. S. (2025). Burnout and post-traumatic stress disorders in police officers: Systematic review and meta-analysis. Journal of Police and Criminal Psychology, 40, 645–658.</p><a class="project-link" href="https://doi.org/10.1007/s11896-024-09713-7" target="_blank" rel="noopener noreferrer">Ver recurso <span aria-hidden="true">↗</span></a></div>
+          </article>
+          <article class="project-card" id="contenedor-50">
+            <div class="project-art"><span class="art-label">LIBRO</span><span class="art-number">50 / 54</span></div>
+            <div class="project-info"><div class="project-meta"><span>REFERENCIA</span><span>50</span></div><h3>Riesgo psicosocial: El modelo demanda-control-apoyo social (I).</h3><p>Vega Martínez, S. (2001). NTP 603: Riesgo psicosocial: El modelo demanda-control-apoyo social (I). Instituto Nacional de Seguridad e Higiene en el Trabajo.</p><a class="project-link" href="https://saludlaboral.org/wp-content/uploads/2017/02/ntp_603.pdf" target="_blank" rel="noopener noreferrer">Ver recurso <span aria-hidden="true">↗</span></a></div>
+          </article>
+          <article class="project-card" id="contenedor-51">
+            <div class="project-art"><span class="art-label">LIBRO</span><span class="art-number">51 / 54</span></div>
+            <div class="project-info"><div class="project-meta"><span>REFERENCIA</span><span>51</span></div><h3>Escala de bienestar de Ryff: análisis comparativo de los modelos teóricos en distintos grupos de edad.</h3><p>Vera-Villarroel, P., Urzúa M., A., Silva, J. R., Pavez, P., & Celis-Atenas, K. (2013). Escala de bienestar de Ryff: análisis comparativo de los modelos teóricos en distintos grupos de edad. Psicologia: Reflexão e Crítica, 26(1).</p><a class="project-link" href="https://doi.org/10.1590/S0102-79722013000100012" target="_blank" rel="noopener noreferrer">Ver recurso <span aria-hidden="true">↗</span></a></div>
+          </article>
+          <article class="project-card" id="contenedor-52">
+            <div class="project-art"><span class="art-label">LIBRO</span><span class="art-number">52 / 54</span></div>
+            <div class="project-info"><div class="project-meta"><span>REFERENCIA</span><span>52</span></div><h3>Sources of Stress and Psychological Health Outcomes Among U.S. Air Force Total Force Distributed Common Ground System Operators.</h3><p>Wayne L Chappelle, Lillian R Prince, Tanya M Goodman, Sources of Stress and Psychological Health Outcomes Among U.S. Air Force Total Force Distributed Common Ground System Operators, Military Medicine, Volume 184, Issue Supplement_1, March-April 2019, Pages 451–460,</p><a class="project-link" href="https://doi.org/10.1093/milmed/usy398" target="_blank" rel="noopener noreferrer">Ver recurso <span aria-hidden="true">↗</span></a></div>
+          </article>
+          <article class="project-card" id="contenedor-53">
+            <div class="project-art"><span class="art-label">LIBRO</span><span class="art-number">53 / 54</span></div>
+            <div class="project-info"><div class="project-meta"><span>REFERENCIA</span><span>53</span></div><h3>The military occupational stress response scale: Development, reliability, and validity. Front. Psychol.</h3><p>Wu Q, Yang Z, Qiu R, Cheng S, Zhu X, Han Z and Xiao W (2023) The military occupational stress response scale: Development, reliability, and validity. Front. Psychol. 14:1032876.</p><a class="project-link" href="https://doi.org/10.3389/fpsyg.2023.1032876" target="_blank" rel="noopener noreferrer">Ver recurso <span aria-hidden="true">↗</span></a></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contacto">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">Información</p>
+            <h2>Pagina desarrollada por MR</h2>
+          </div>
+          <p class="section-intro">
+            para mas información sobre el proyecto, puedes contactarnos a través de nuestro numero de telefono. Estamos disponibles para responder cualquier pregunta o inquietud que puedas tener: 
+            <a href="tel:+573118100751">
+              +57 311 810 0751
+            </a>
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer container">
+    <span>© 2026 Mi colección. Todos los derechos reservados.</span>
+    <a class="footer-link" href="#inicio">Volver arriba ↑</a>
+  </footer>
+</body>
+</html>
